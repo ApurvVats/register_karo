@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --orange:        #F26522;
+  --orange-light:  #FFF4EE;
+  --white:         #FFFFFF;
+  --surface:       #FAFAFA;
+  --border:        #E8E8E8;
+  --text-primary:  #111111;
+  --text-secondary:#6B7280;
+  --text-muted:    #9CA3AF;
+  --success:       #16A34A;
+  --success-bg:    #F0FDF4;
+  --error:         #DC2626;
+  --error-bg:      #FEF2F2;
+  --warn:          #D97706;
+  --running-bg:    #EFF6FF;
+  --running:       #2563EB;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--surface);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+@keyframes slide-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes spin { to { transform: rotate(360deg); } }

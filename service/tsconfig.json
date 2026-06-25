@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@itr/shared": ["../shared/types.ts"]
+    }
+  },
+  "include": ["src/**/*", "../shared/**/*"]
+}

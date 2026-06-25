@@ -1,0 +1,17 @@
+{
+  "name": "registerkaro-itr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ITR Credential Generation — Automation + Live Events + Dashboard",
+  "workspaces": ["shared", "automation", "service", "ui"],
+  "scripts": {
+    "dev:service": "npm run dev --workspace=service",
+    "dev:automation": "npm run dev --workspace=automation",
+    "dev:ui": "npm run dev --workspace=ui",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
